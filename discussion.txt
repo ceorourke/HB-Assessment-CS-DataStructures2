@@ -1,0 +1,62 @@
+**********************************Recursion*************************************
+
+1. Recursion is when a function calls itself. It can be used in place of loops and 
+requires a base case to complete.
+
+2. It's necessary to have a base case so the function knows when to stop. Without
+one, it would keep calling itself indefinitely, like a broken while loop.
+
+***********************************Graphs****************************************
+
+1. A graph is a conceptual data structure that is similar to a tree, but contains
+loops. This means that nodes can be connected in more ways than with a tree. They 
+can be either directed or undirected. If it is directed, you could represent a food 
+chain showing that penguins eat fish. If it's undirected, that same food chain would be broken because it would mean that penguins eat fish AND fish also eat penguins (which isn't true).
+
+2. A graph is different from a tree because a graph has loops. A graph can be a tree,
+but a tree cannot be a graph. I'm finding this quite difficult to explain without
+pictures. 
+
+3. A good use case for using a graph would be if you were modeling paths between
+cities.
+
+*************************Data Structure Performance*****************************
+
+
+Data structure              Index  Search Add-R  Add-L   Pop-L   Pop-R
+Python List (Array)          O(1)   O(n)   O(1)   O(n)    O(n)    O(1)
+Linked List                  O(n)   O(n)   O(1)   O(1)    O(1)    O(n)
+Doubly-Linked List           O(n)   O(n)   O(1)   O(1)    O(1)    O(1)
+Queue (as Array)              X      X     O(1)    X      O(n)     X
+Queue (as LL or DLL)          X      X     O(1)    X      O(1)     X
+Stack (as Array, LL, or DLL)  X      X     O(1)    X       X      O(1)
+Deque (as DLL)                X      X     O(1)   O(1)    O(1)    O(1)
+
+
+Data Structure              Get     Add     Delete    Iterate    Memory
+Dictionary (Hash Map)       O(1)    O(1)     O(1)      O(n)      medium
+Set (Hash Map)              O(1)    O(1)     O(1)      O(n)      medium     
+Binary Search Tree        O(log n) O(log n) O(log n)  O(log n)  a little
+Tree                        O(n)    O(n)     O(n)      O(n)     a little
+
+**********************************Sorting***************************************
+
+1. Bubble Sort works by starting at the beginning of a list of numbers, comparing
+the first 2 numbers to each other, and moving the smaller one to the left. It then
+moves on to the next 2 numbers and does the same process, until it reaches the end
+of the list. After that, it starts again at the beginning, but goes until the 2nd
+to last number (because the last number is already sorted), and so on, until the
+list has been sorted - typically from smallest to largest.
+
+2. Merge Sort works by breaking a list of numbers in half, then in 
+half again, until the lists are lists of one. A list of one is already sorted. It 
+then puts the lists back together again, by comparing the first element of the now
+sorted list with the next list, and combining them together in the correct order. It 
+repeats this process until all of the smaller lists have been combined into one,
+large sorted list.  
+
+3. Quick Sort works by choosing a pivot, and moving all numbers smaller than the
+pivot number to the left, and all larger numbers to the right. This process
+repeats until all the numbers are sorted.
+
+
