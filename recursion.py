@@ -16,10 +16,6 @@ def print_item(my_list, i=0):
     """
     pass
 
-    # Feeling very confused and frustrated. Was surprised that I could figure 
-    # out the linked list method on HackerRank after being stumped on these. 
-
-
 # 2. Write a function that uses recursion to print each node in a tree.
 
 def print_all_tree_data(tree):
@@ -48,8 +44,6 @@ def print_all_tree_data(tree):
     for child in tree.children:
         print_all_tree_data(child)
 
-    # this solution is from the lecture demo. having a real hard time with this
-
 # 3. Write a function that uses recursion to find the length of a list.
 
 
@@ -64,9 +58,6 @@ def list_length(my_list):
 
     return 1 + list_length(my_list[1:])
 
-    # this solution is from the lecture notes. I can understand what's
-    # going on if I read through this, but I wouldn't have been able to
-    # write it on my own
 
 # 4. Write a function that uses recursion to count how many nodes are in a tree.
 
